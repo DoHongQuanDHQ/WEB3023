@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="lab2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b0b942a656.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="tieude">
+          <img src="img2/Group.png" alt="" />
+          <form action="" class="timkiem">
+            <input
+              type="text"
+              class="search"
+              required
+              placeholder="Search product..."
+            />
+            <button class="search"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+
+        <div class="image">
+          <img src="img2/Vector (1).png" alt="" />
+          <img src="img2/Vector (2).png" alt="" />
+        </div>
+      </header>
+
+      <nav>
+        <div class="menu">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Page</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <img src="img2/Vector (3).png" alt="" />
+          <!-- <a href="">1900-1080</a> -->
+          <p>1900-1080</p>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <img src="img2/BANNER.png" alt="" />
+      </div>
+
+
+    </div>
+
+    <!-- List san pham -->
+
+    <main>
+      <div class="content">
+      
+        <section>
+          <div class="info-product">
+            <div class="product">
+              <img src="img2/Rectangle 6.png" alt="" />
+              <div class="info">
+                <div class="sale">SALE OFF 20%</div>
+              </div>
+            </div>
+            <div class="thongtin">
+              <div class="tensp"><a href="">APPLE</a></div>
+              <div class="gia">$8</div>
+            </div>
+          </div>
+
+          <div class="info-product">
+            <div class="product">
+              <img src="img2/SAN PHAM2.png" alt="" />
+              <div class="info">
+                <div class="sale">SALE OFF 20%</div>
+              </div>
+            </div>
+            <div class="thongtin">
+              <div class="tensp"><a href="">WATERMELON</a></div>
+              <div class="gia">$3</div>
+            </div>
+          </div>
+
+          <div class="info-product">
+            <div class="product">
+              <img src="img2/SAN PHAM3.png" alt="" />
+              <div class="info">
+                <div class="sale">SALE OFF 20%</div>
+              </div>
+            </div>
+            <div class="thongtin">
+              <div class="tensp"><a href="">CARROT</a></div>
+              <div class="gia">$13</div>
+            </div>
+          </div>
+
+
+        </section>
+      </div>
+    </main>
+
+    <!-- tra tien -->
+
+    <!-- <div class="tt">
+      <div class="pp_tt">
+        <div class="phuongphap">PAYMENT METHODS</div>
+        <div id="drag_drop" ondragover="allowDrop(event)" ondrop="drop(event)">Drag and Drop here</div>
+      </div>
+
+      <div class="img_tt">
+        <img src="img2/THE.png" alt="" id="the" draggable="true" ondragstart="dragStart(event)"/>
+
+        <img src="img2/TIEN MAT.png" alt="" id="tien" draggable="true" ondragstart="dragStart(event)"/>
+      </div>
+    </div> -->
+    <main>
+      <div class="thanhtoan">
+        <div id="div1" ondragover="allowDrop(event)" ondrop="drop(event)">
+          <a href="">PAYMENT METHODS</a>
+        </div>
+        <!-- ondragover cho phép tiếp nhận allowdrop rơi xuống -->
+        <img src="img2/THE.png" alt="" id="drag1" draggable="true" ondragstart="dragStart(event)"/>
+        <img src="img2/TIEN MAT.png" alt="" id="drag2" draggable="true" ondragstart="dragStart(event)"/>
+  
+      </div>
+    </main>
+   
+    
+
+
+    <div class="tacgia">
+      <footer>
+        <div class="ten">
+          <!-- DO HOANG LONG - PH28835 -->
+          <a
+            href="file:///C:/Users/HP/OneDrive/Documents/HTML5CSS3/lab3/lab3.html"
+            >DO HOANG LONG - PH28835</a
+          >
+        </div>
+      </footer>
+    </div>
+
+
+    <script>
+      //có 2 hành động : 
+      // +DRAG(giữ chuột và kéo đi)
+      //+DROP(thả đối tượng)
+      //Bước 1 : xác định đúng đối tượng được kéo đi gắn thuộc tính dragable = true
+      //Bước 2 : xác đinh dữ liệu được kéo đi thông qua đâu?
+      //+ thiết lập 1 hàm để thực thi sự kiện ondragstart
+      //+ gọi sự kiện ondragstart(khi bất đầu kéo sự vật đi) cho đối tượng được kéo
+
+      function dragStart(ev) {
+          ev.dataTransfer.setData("text",ev.target.id);
+      }
+      //bước 3 : cho phép đối tượng tiếp nhận dữ liệu khi có 1 đối tượng khác đang được kéo lên trên nó
+      //+thiết lập 1 hàm cho phép dữ liệu rơi xuống
+      //+ gọi sự kiện để hàm đó được thực thi
+
+      function allowDrop(ev) {
+          //cho phép tiếp nhận rơi xuống
+          ev.preventDefault();
+
+      }
+      //bước 4:  xác định dữ liệu tiếp nhận
+      //+ gọi sự kiện Ondrop 
+      //+ viết hàm đáp lại sự kiện ondrop
+      function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data))//appendChild tạo bản sao
+      }
+  </script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  width: 1200px;
+  margin: 0px auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+.left {
+  display: flex;
+}
+.left img {
+  width: 100px;
+  height: 50px;
+  padding: 0px 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  outline: none;
+  border: none;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 0px 20px;
+  color: black;
+  outline: none;
+  border: none;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.right {
+  margin-left: 10px;
+}
+
+.right i {
+  padding: 0px 5px;
+}
+
+.header .banner {
+  width: 100%;
+  overflow: hidden;
+}
+.header .banner img {
+  width: 100%;
+  transition: 3s;
+}
+.header .banner:hover img {
+  transform: scale(1.3);
+  cursor: pointer;
+  transition: 2s;
+}
+
+.content {
+  width: 1200px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.content section {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content section .product {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.content img {
+  width: 100%;
+  height: 400px;
+}
+
+.product {
+  text-align: center;
+  height: 400px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.info {
+  display: inline-block;
+  background-color: black;
+  width: 100%;
+  opacity: 0.8;
+  transition: 2s;
+}
+
+.info .name,
+.price {
+  background-color: #fff;
+  padding: 5px;
+}
+.info .add {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.product:hover .info {
+  transform: translateY(-100px);
+  transition: 1s;
+}
+.product img{
+  transition: 3s;
+}
+.product:hover img {
+  transform: scale(1.8);
+  transition: 2s;
+}
+.banner-content{
+ width: 100%;
+  overflow: hidden;
+  height: 500px;
+  margin-bottom: 10px;
+}
+
+.banner-content img{
+  width: 100%;
+  height: 100%;
+  transition: 3s;
+}
+
+.banner-content:hover img {
+  cursor: pointer;
+  transform: scale(1.3);
+  opacity: 1;
+  transition: 2s;
+}
+
+footer {
+  background: #021a34;
+  color: white;
+  padding: 20px;
+}
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+}

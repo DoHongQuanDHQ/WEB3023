@@ -1,0 +1,115 @@
+.auth-from__container{
+    padding: 0 32px;
+}
+.au-from__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.auth-from__heading{
+    font-weight: 400;
+    color: var(--text-color);
+    text-align: center;
+}
+.au-from__switch-btn{
+    /* font-size: 1.6rem; */
+    font-weight: 400;
+    color: var(--primary-color);
+    color: brown;
+    cursor: pointer;
+    
+}
+.auth-from{
+    width: 400px;
+    height: 360px;
+    border: 1px solid gold;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+.au-from__input{
+    width: 80%;
+    height: 20px;
+    padding: 0 12px;
+    border-radius: 3px;
+    
+}
+#mail,
+#pass {
+    outline: none;
+    height: 25px;
+}
+.auth-from__side{
+    margin-top: 20px;
+}
+.auth-from__text-link{
+    color: red;
+    text-decoration: none;
+    padding: 0 5px;
+}
+.auth-from__controls{
+    margin-top: 20px;
+}
+.btn{
+    min-width: 100px;
+    height: 25px;
+    border-radius: 3px;
+    border: none;
+    font-size: 0.9rem;
+}
+.btn:hover{
+    background-color: blanchedalmond;
+}
+.btn.btn--primary{
+    color: antiquewhite;
+    background-color: orangered;
+    border-radius: 3px;
+    border: none;
+}
+.auth-from__controls{
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+.auth-from__socials{
+    background-color: azure;
+    padding: 4.5px 40px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+button {
+    border: 0, 5px solid #999;
+    transition: 0.2s ease;
+    height: 35px;
+    width: 100px;
+    outline: none;
+    border-radius: 5px;
+    background: rgb(170, 32, 32);
+    color: #fff;
+}
+
+button:hover {
+    background: green;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

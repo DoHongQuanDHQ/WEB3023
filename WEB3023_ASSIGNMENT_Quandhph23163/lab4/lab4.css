@@ -1,0 +1,204 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  width: 1200px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #dfd9d9;
+}
+.header img {
+  width: 100px;
+  height: 50px;
+}
+.right i {
+  padding: 10px 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: red;
+  transition: all 0.25s ease-in-out;
+  border-bottom: 1px solid red;
+}
+
+.header .banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 500px;
+  transition: 2s;
+}
+.banner:hover img{
+  transform: scale(1.3);
+  transition: 2s;
+}
+.header h2 {
+  padding: 15px;
+}
+
+.content {
+  width: 1200px;
+  margin: 0px auto;
+  text-align: center;
+  align-items: center;
+  height: 500px;
+  background-color: #DDD9D9;
+}
+
+.content section {
+  display: grid;
+  column-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.content section .product{
+    margin-bottom: 25px;
+    color: #1C4749;
+    font-weight: 600;
+    padding: 20px;
+    
+}
+.product{
+    height: 330px;
+    overflow: hidden;
+}
+.product img{
+    width: 100%;
+    height: 350px;
+}
+.hover{
+    display: block;
+    transition: 3s;
+    width: 100%;
+}
+
+.product:hover .hover {
+    transform: translateY(-100%);
+    transition: 2s;
+}
+
+.info .pro-name, .pro-price{
+    padding: 5px;
+}
+.info .buy-now{
+    background-color:  #1C4749;
+    color: #fff;
+    padding: 7px 15px;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+}
+.product .buy-now:hover{
+    background-color: red;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.email-sub{
+    width: 1200px;
+    margin: 0px auto;
+    height: 180px;
+    background-color: #DDD9D9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.email-sub h3{
+   padding-top: 30px;
+}
+
+.email-sub .email{
+    padding: 25px;
+}
+
+.email-sub input{
+    width: 250px;
+    padding: 15px 30px 15px 5px;
+    border: none;
+    outline: none;
+}
+
+.email-sub button{
+    width: 100px;
+    padding: 15px;
+    background-color: #1C4749;
+    border: none;
+    color: #fff;
+
+}
+.email-sub button:hover{
+    background-color: rgb(51, 0, 255);
+    cursor: pointer;
+    border-top: 4px solid red ;
+    border-left: 4px solid pink;
+    border-bottom: 4px solid yellow;
+    border-right: 4px solid aqua;
+    transition: all 1s ease-in-out;
+    transform: scaleX(1);
+
+}
+button:hover::after{
+    transform: scaleX(1);
+    transition-delay: 0.4s;
+}
+
+
+/* footer{
+    width: 1200px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+} */
+
+/* footer p{
+    background-color: #1C4749;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+footer a{
+  
+  width: 100%;
+  text-decoration: none;
+  background-color: #1C4749;
+  color: #fff;
+  text-align: center;
+} */
+
+footer {
+  width: 1160px;
+  background: #021a34;
+  color: white;
+  text-align: center;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dangkythanhvien.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li><a href="chitietsp.html">Trang Chủ</a></li>
+                <li><a href="baogiasp.html">Sản Phẩm</a></li>
+                <li><a href="tranglienhe.html">Liên Hệ</a></li>
+            </ul>
+            <div class="search">
+                <input type="search" placeholder="Search...">
+                <button>Tìm Kiếm</button>
+            </div>
+        </div>
+        <div class="banner">
+            <img class="img-anh" src="img/logo.png" alt="">
+        </div>
+        <br>
+       
+        <center><h2>Đăng Ký Tài Khoản</h2></center>
+        <br>
+    <div class="content">
+        <div class="auth-from">
+            <div class="auth-from__container">
+            <div class="au-from__header">
+                <h3 class="auth-from__heading">Đăng Ký</h3>
+                <span class="au-from__switch-btn"><a href="dangnhap.html">Đăng Nhập</a></span>
+            </div>
+
+            <div class="auth-from__from">
+                <div class="auth-from__group">
+                    Username: <br>
+                    <input type="text" name="user" id="user"> <br>
+                    <span class="error"> <?php echo $userErr; ?></span>
+                </div>
+                <br>
+                <div class="auth-from__group">
+                    <input type="text" class="au-from__input" placeholder="Nhập Mật khẩu của bạn">
+                </div>
+                <br>
+                <div class="auth-from__group">
+                    <input type="text" class="au-from__input" placeholder="Nhập Lại Mật khẩu của bạn">
+                </div>
+            </div>
+    
+            <div class="auth-from__side">
+                <p class="auth-from__poly-text">
+                    Bằng việc đăng ký bạn đã đồng ý về
+                    <a href="" class="auth-from__text-link">Điều khoản dịch vụ</a> &
+                    <a href="" class="auth-from__text-link">Chính sách bảo mật</a>
+                </p>
+            </div>
+            <div class="form-group">
+                <lable>Giới tính</lable>
+                <input type="radio" class="gioiTinh"> Nam
+                <input type="radio" class="gioiTinh"> Nữ
+                <div class="tb2"></div>
+            </div>
+    
+            <div class="auth-from__controls">
+                <button>Hủy</button>
+                <button onclick="return kiemtra2()">Đăng Ký</button>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    <footer>
+        <h5>TRỤ SỞ</h5>
+            <p>Địa chỉ : Số 123 Đặng Tiến Đông, Đống Đa, Hà Nội</p>
+            <p>Điện thoại : 0966868001 - 0466886633</p>
+            <p>Email: kd.shophoaqua@gmail.com</p>
+            <p>Website: shophoaqua.vn</p>
+            <div class="mail">
+                <h4>ĐĂNG KÝ NHẬN EMAIL</h4>
+                <p>Cung cấp email của bạn để nhận được thông tin khuyến mãi của chúng tôi</p>
+                <input type="email" name="" id="mail" placeholder="Email của bạn...">
+                <button>Gửi</button>
+            </div>  
+    </footer>
+</div>
+</body>
+</html>

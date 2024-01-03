@@ -1,0 +1,277 @@
+.container {
+  width: 1250px;
+  margin: 0px auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin: 25px;
+  flex-direction: row;
+}
+
+.tieude {
+  display: flex;
+  align-items: center;
+}
+
+.tieude img {
+  width: 150px;
+  height: 100px;
+}
+
+.timkiem {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+
+.timkiem input {
+  display: flex;
+  width: 350px;
+  height: 0px;
+  border: none;
+  padding: 20px;
+  outline: none;
+  border-radius: 20px;
+  background-color: #e8e8e8;
+}
+
+.timkiem button {
+  width: 50px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  margin-left: 10px;
+  background-color: #e8e8e8;
+}
+
+button:hover {
+  background: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.image {
+  display: flex;
+  margin-left: 100px;
+}
+
+.image img {
+  width: 30px;
+  padding: 15px;
+}
+
+.menu {
+  display: flex;
+  background: #0a472e;
+  align-items: center;
+}
+nav ul li a:hover {
+  /* border-bottom: 3px solid red; */
+  color: red;
+  width: 10px;
+  transition: all 0.25s ease-in-out;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.menu img {
+  display: block;
+  width: 30px;
+  height: 20px;
+  margin-left: 500px;
+}
+
+.menu p {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  transition: 3s;
+}
+
+.container .banner:hover img {
+  cursor: pointer;
+  transform: scale(1.15);
+  transition: 2s;
+}
+
+/* list san pham */
+.content {
+  width: 1200px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.content section {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 30px;
+}
+
+.content section .product {
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+.content img {
+  width: 100%;
+  height: 400px;
+}
+
+.product {
+  text-align: center;
+  height: 400px;
+  overflow: hidden;
+  cursor: pointer;
+  padding-top: 20px;
+}
+
+.info {
+  display: inline-block;
+  background-color: black;
+  width: 100%;
+  transition: 2s;
+}
+
+.info .sale {
+  background-color: #cbfb9c;
+  padding: 15px;
+}
+
+.product:hover .info {
+  transform: translateY(-53px);
+  transition: 2s;
+}
+
+.tensp a {
+  text-decoration: none;
+  color: green;
+}
+.gia {
+  color: red;
+  font-weight: bold;
+  padding: 5px;
+}
+/* tra tien */
+
+/* .tt{
+    width: 1250px;
+    background: #CBFB9C;
+    height: 300px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+}
+
+.tt .pp_tt{
+    padding: 30px 100px;
+    width: 30%;
+
+}
+
+.tt .phuongphap{
+    padding: 10px;
+    color: #0A472E;
+    font-weight: bold;
+}
+
+.tt #drag_drop{
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    color: #919F99;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    border: 1px solid black;
+}
+
+.tt .img_tt{
+    width: 100%;
+    display: flex;
+}
+
+.img_tt img{
+  width: 100px;
+  height: 150px;
+  padding: 10px;
+} */
+main {
+  width: 1250px;
+  margin: 0px auto;
+}
+ .thanhtoan {
+  width: 100%;
+  background: #cbfb9c;
+  height: 300px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  margin-bottom: 5px;
+  text-align: center;
+  align-items: center;
+}
+#div1 {
+  width: 250px;
+  height: 270px;
+  border-top: 2px solid blue;
+  border-bottom: 2px solid red;
+  border-left: 2px solid purple;
+  border-right: 2px solid green;
+  margin: 20px ;
+  margin-right: 100px;
+}
+#div1 a {
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: red;
+}
+#drag1 {
+  width: 250px;
+  height: 250px;
+  margin-right: 50px;
+}
+#drag2 {
+  width: 250px;
+  height: 250px;
+  margin-right: 50px;
+}
+
+/* tên tác giả */
+.tacgia {
+  width: 1250px;
+  margin: 0px auto;
+  font-family: "Montserrat", sans-serif;
+  background: #0a472e;
+  height: 50px;
+}
+
+.tacgia .ten {
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+  color: #fff;
+}
+
+.ten a {
+  text-decoration: none;
+  color: #fff;
+  margin: 20px;
+}
